@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Menu</title>
+</head>
+<body>
+
+    <h1>Starbucks Coffee Menu</h1>
+    <p>探索我們精選的咖啡飲品</p>
+
+    <ul>
+        {% for drink in drinks %}
+        <li>
+            <strong>中文名稱：</strong>{{ drink.title_cn }}
+            <br>
+            <strong>英文名稱：</strong>{{ drink.title_en }}
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
